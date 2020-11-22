@@ -1,0 +1,35 @@
+﻿<Window x:Class="uppgift5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uppgift5"
+        mc:Ignorable="d"
+        Title="Addera 2 heltal" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="firstNumber" Grid.Row="1" Grid.Column="2" Width="40" Height="20" Margin="10"/>
+        <Label Content="+" Grid.Row="2" Grid.Column="1" FontSize="18"/>
+        <TextBox x:Name="secondNumber" Grid.Row="2" Grid.Column="2" Width="40" Height="20" />
+        <Separator Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="sumButton" Content="=" Grid.Column="1" Grid.Row="4" FontSize="18" Click="sumButton_Click" />
+        <TextBlock x:Name="result" Grid.Column="2" Grid.Row="4" FontSize="18" Margin="10"/>
+        <Button x:Name="clearButton" Content="rensa" Background="white"  Grid.Column="1" Grid.Row="5" Click="clearButton_Click" />
+    </Grid>
+</Window>

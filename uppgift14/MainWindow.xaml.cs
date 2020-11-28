@@ -29,10 +29,10 @@ namespace uppgift14
             bool success = int.TryParse(number, out int test);
             return success;
         }
-        private bool CheckInputs()
+        private bool CheckInputs(string input)
         {
             // never trust the user - check the inputs
-            if (CheckIfNumber(input.Text) == false)
+            if (CheckIfNumber(input) == false)
             {
                 MessageBox.Show("Fel! Accepterar bara positiva heltal");
                 return false;
@@ -42,18 +42,16 @@ namespace uppgift14
                 return true;
             }
         }
-        private int convertToInt()
+        private int convertToInt(string input)
         {
-            // never trust the user - check the inputs
-            string firstText = input.Text;
-            // convert to int
-            return int.Parse(firstText);
+            return int.Parse(input);
         }
         private void calculate_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckInputs() == true)
+            string userinput = input.Text.ToString();
+            if (CheckInputs(userinput) == true)
             {
-                int birthyear = convertToInt();
+                int birthyear = convertToInt(userinput);
                 int year = DateTime.Today.Year;
                 int age = year - birthyear;
                 MessageBox.Show($"Du är {age} år gammal.");

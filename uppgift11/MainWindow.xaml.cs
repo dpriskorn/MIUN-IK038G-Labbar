@@ -108,10 +108,16 @@ namespace uppgift11
             resultCorrect.Text = $"Antal åt rätt håll {correct}";
             resultIncorrect.Text = $"Antal åt fel håll {incorrect}";
         }
+        private void Reset()
+        {
+            correct = 0;
+            incorrect = 0;
+        }
         private void start_Click(object sender, RoutedEventArgs e)
         {
             if (CheckInputs() == true)
             {
+                Reset();
                 CalculateResult();
                 ShowResult();
             }

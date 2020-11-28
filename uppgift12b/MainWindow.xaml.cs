@@ -101,6 +101,7 @@ namespace uppgift12
         {
             mean.Text = null;
             listbox.ItemsSource = null;
+            values = null;
             EnableInput();
             PrepareNewInput();
         }

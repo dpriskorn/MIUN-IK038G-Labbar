@@ -26,18 +26,6 @@ namespace uppgift15
         {
             InitializeComponent();
         }
-        private string GetInput()
-        {
-            return input.Text;
-        }
-        private void ShowOutput(string text)
-        {
-            output.Text = text;
-        }
-        private void ShowCount(int number)
-        {
-            count.Text = $"Antal vokaler: {number}";
-        }
         private bool IsVowel(char c)
         {
             if (smallVowels.Contains(c) || bigVowels.Contains(c))
@@ -85,9 +73,9 @@ namespace uppgift15
         }
         private void convert_Click(object sender, RoutedEventArgs e)
         {
-            string input = GetInput();
-            ShowOutput(Jibberish(input));
-            ShowCount(NumberOfVowels(input));
+            string inputText = input.Text;
+            output.Text= Jibberish(inputText);
+            count.Text = $"Antal vokaler: {NumberOfVowels(inputText)}";
         }
     }
 }

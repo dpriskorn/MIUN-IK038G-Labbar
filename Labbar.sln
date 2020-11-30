@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uppgift12b", "uppgift12b\up
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uppgift13", "uppgift13\uppgift13.csproj", "{21E19E9E-FDE5-4C9B-A18A-568D73DEA9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppgift14", "uppgift14\uppgift14.csproj", "{0AB6DEEE-3AFC-4221-9F47-271E7DDFC0AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uppgift14", "uppgift14\uppgift14.csproj", "{0AB6DEEE-3AFC-4221-9F47-271E7DDFC0AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppgift15", "uppgift15\uppgift15.csproj", "{31E1E508-DF84-47B3-9DCE-6727620842C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uppgift15", "uppgift15\uppgift15.csproj", "{31E1E508-DF84-47B3-9DCE-6727620842C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harrypotter1", "harrypotter1\harrypotter1.csproj", "{451F7BB6-914B-4474-B683-230BF2F01D6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{31E1E508-DF84-47B3-9DCE-6727620842C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31E1E508-DF84-47B3-9DCE-6727620842C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31E1E508-DF84-47B3-9DCE-6727620842C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{451F7BB6-914B-4474-B683-230BF2F01D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451F7BB6-914B-4474-B683-230BF2F01D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451F7BB6-914B-4474-B683-230BF2F01D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451F7BB6-914B-4474-B683-230BF2F01D6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

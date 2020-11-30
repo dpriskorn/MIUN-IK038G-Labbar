@@ -4,7 +4,7 @@ using System.Text;
 
 namespace harrypotter1
 {
-    class House // base class (parent)
+    abstract class House // base class (parent)
     {
         public string HouseGhost  // property
         { get; set; }
@@ -46,7 +46,7 @@ namespace harrypotter1
             char lastLetter = lowerPassword[-1];
             if (this.GetType().Name == "Slytherin")
             {
-                if (IsConsonant(firstLetter) && IsConsonant(lastLetter))
+                if (IsConsonant(firstLetter) && IsConsonant(lastLetter) && password.Length >= 8)
                 {
                     return true;
                 }
@@ -57,7 +57,7 @@ namespace harrypotter1
             }
             else
             {
-                if (IsVowel(firstLetter) && IsConsonant(lastLetter))
+                if (IsVowel(firstLetter) && IsConsonant(lastLetter) && password.Length >= 5)
                 {
                     return true;
                 }
@@ -65,6 +65,25 @@ namespace harrypotter1
                 {
                     return false;
                 }
+            }
+        }
+        private bool SetPassword(string currentPassword, string newPassword)
+        {
+            if (HasCorrectPasswordFormat(newPassword))
+            {
+                if (Password == currentPassword)
+                {
+                    Password = newPassword;
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
             }
         }
     }
